@@ -1,0 +1,200 @@
+[
+  {
+    "id": "inc-1",
+    "title": "Repayment Risk model drifting beyond threshold",
+    "severity": "SEV2",
+    "status": "monitoring",
+    "owner": "Amara Diallo",
+    "startedAt": "12 Nov 2026, 09:14",
+    "resolvedAt": null,
+    "affected": ["Repayment Risk model"],
+    "linkedAlertIds": ["alert-1", "alert-5"],
+    "timeline": [
+      {
+        "time": "12 Nov 2026, 09:14",
+        "author": "System",
+        "type": "status_change",
+        "message": "Incident opened — Repayment Risk v1.8 accuracy moved outside its expected range."
+      },
+      {
+        "time": "12 Nov 2026, 09:40",
+        "author": "Amara Diallo",
+        "type": "update",
+        "message": "Confirmed drift on MoMo transaction frequency and average loan size. Reviewing the fairness breakdown for rural applicants."
+      },
+      {
+        "time": "13 Nov 2026, 11:02",
+        "author": "Amara Diallo",
+        "type": "status_change",
+        "message": "Moved to monitoring — retrained candidate v1.9 shows accuracy back above 0.80 in shadow mode. Watching for a week before promoting."
+      }
+    ],
+    "rootCause": "A shift toward smaller, more frequent MoMo-based loan requests was not represented in the v1.8 training window, pulling down accuracy on recent applicants.",
+    "resolution": null
+  },
+  {
+    "id": "inc-2",
+    "title": "Bank of Kigali core banking feed outage",
+    "severity": "SEV1",
+    "status": "resolved",
+    "owner": "Kwame Asante",
+    "startedAt": "02 Nov 2026, 05:58",
+    "resolvedAt": "02 Nov 2026, 10:21",
+    "affected": ["Bank of Kigali"],
+    "linkedAlertIds": ["alert-2"],
+    "timeline": [
+      {
+        "time": "02 Nov 2026, 05:58",
+        "author": "System",
+        "type": "status_change",
+        "message": "Incident opened — Bank of Kigali's core banking upload did not start at its scheduled time."
+      },
+      {
+        "time": "02 Nov 2026, 06:30",
+        "author": "Kwame Asante",
+        "type": "update",
+        "message": "Confirmed with Bank of Kigali's IT team — their export service was down for scheduled maintenance that ran long."
+      },
+      {
+        "time": "02 Nov 2026, 09:50",
+        "author": "Kwame Asante",
+        "type": "action",
+        "message": "Bank of Kigali's export service is back up. Triggered a manual re-run of the upload."
+      },
+      {
+        "time": "02 Nov 2026, 10:21",
+        "author": "Kwame Asante",
+        "type": "status_change",
+        "message": "Resolved — upload completed successfully with 18,420 records."
+      }
+    ],
+    "rootCause": "Bank of Kigali's core banking export service was offline for an extended maintenance window, so the scheduled upload had nothing to pull from.",
+    "resolution": "Bank of Kigali re-ran the export once their service was restored, and Menya re-triggered the delayed upload manually."
+  },
+  {
+    "id": "inc-3",
+    "title": "Inkingi SACCO API access suspended after compliance flag",
+    "severity": "SEV2",
+    "status": "identified",
+    "owner": "Fatima Nkosi",
+    "startedAt": "02 Nov 2026, 06:31",
+    "resolvedAt": null,
+    "affected": ["Inkingi SACCO"],
+    "linkedAlertIds": ["alert-3"],
+    "timeline": [
+      {
+        "time": "02 Nov 2026, 06:31",
+        "author": "System",
+        "type": "status_change",
+        "message": "Incident opened — Inkingi SACCO's ledger sync failed after their API key was revoked."
+      },
+      {
+        "time": "03 Nov 2026, 14:05",
+        "author": "Fatima Nkosi",
+        "type": "update",
+        "message": "Institution was suspended pending a compliance review, which revoked their key as expected. Waiting on the review outcome before restoring access."
+      },
+      {
+        "time": "10 Nov 2026, 10:00",
+        "author": "Fatima Nkosi",
+        "type": "status_change",
+        "message": "Moved to identified — compliance review is in progress with an expected outcome by end of month."
+      }
+    ],
+    "rootCause": "Inkingi SACCO was suspended pending a compliance review, which automatically revoked their live API key and stopped ledger uploads.",
+    "resolution": null
+  },
+  {
+    "id": "inc-4",
+    "title": "Platform API error rate spike",
+    "severity": "SEV3",
+    "status": "resolved",
+    "owner": "System",
+    "startedAt": "05 Nov 2026, 13:10",
+    "resolvedAt": "05 Nov 2026, 15:45",
+    "affected": ["Menya API"],
+    "linkedAlertIds": ["alert-4"],
+    "timeline": [
+      {
+        "time": "05 Nov 2026, 13:10",
+        "author": "System",
+        "type": "status_change",
+        "message": "Incident opened — API error rate crossed 3% for the first time this month."
+      },
+      {
+        "time": "05 Nov 2026, 14:02",
+        "author": "Amara Diallo",
+        "type": "update",
+        "message": "Traced to a batch of malformed upload payloads from a single institution's new integration."
+      },
+      {
+        "time": "05 Nov 2026, 15:45",
+        "author": "Amara Diallo",
+        "type": "status_change",
+        "message": "Resolved — error rate back under 1% after the institution patched their payload format."
+      }
+    ],
+    "rootCause": "A newly integrated institution sent malformed POST /v1/uploads payloads, which the API correctly rejected but at a volume that tripped the error-rate threshold.",
+    "resolution": "Shared the API's validation error messages with the institution's engineering team, who fixed their payload format."
+  },
+  {
+    "id": "inc-5",
+    "title": "Consent withdrawal spike at Zigama CSS",
+    "severity": "SEV3",
+    "status": "monitoring",
+    "owner": "Fatima Nkosi",
+    "startedAt": "09 Nov 2026, 08:00",
+    "resolvedAt": null,
+    "affected": ["Zigama CSS"],
+    "linkedAlertIds": ["alert-6"],
+    "timeline": [
+      {
+        "time": "09 Nov 2026, 08:00",
+        "author": "System",
+        "type": "status_change",
+        "message": "Incident opened — consent withdrawals at Zigama CSS rose 40% week over week."
+      },
+      {
+        "time": "09 Nov 2026, 16:20",
+        "author": "Fatima Nkosi",
+        "type": "update",
+        "message": "Zigama CSS says a recent SMS campaign explaining data sharing was misread by some members as a scam message, prompting withdrawals."
+      },
+      {
+        "time": "11 Nov 2026, 09:00",
+        "author": "Fatima Nkosi",
+        "type": "status_change",
+        "message": "Moved to monitoring — Zigama CSS sent a clarifying message and withdrawals have slowed this week."
+      }
+    ],
+    "rootCause": "An SMS campaign explaining Menya data sharing was worded in a way several members found alarming, leading to a wave of consent withdrawals.",
+    "resolution": null
+  },
+  {
+    "id": "inc-6",
+    "title": "I&M Bank Rwanda upload connection failures",
+    "severity": "SEV2",
+    "status": "investigating",
+    "owner": "Kwame Asante",
+    "startedAt": "16 Nov 2026, 07:00",
+    "resolvedAt": null,
+    "affected": ["I&M Bank Rwanda"],
+    "linkedAlertIds": ["alert-7"],
+    "timeline": [
+      {
+        "time": "16 Nov 2026, 07:00",
+        "author": "System",
+        "type": "status_change",
+        "message": "Incident opened — core banking upload for I&M Bank Rwanda timed out after 3 retries."
+      },
+      {
+        "time": "16 Nov 2026, 07:45",
+        "author": "Kwame Asante",
+        "type": "update",
+        "message": "Reaching out to I&M Bank Rwanda's integration team to check whether the export endpoint moved or changed certificates."
+      }
+    ],
+    "rootCause": null,
+    "resolution": null
+  }
+]

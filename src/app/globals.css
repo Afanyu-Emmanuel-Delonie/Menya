@@ -1,26 +1,156 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+
 
 @theme inline {
+  /* ---- Fonts (loaded in layout.tsx via next/font) ---- */
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-jakarta);
+  --font-mono: var(--font-geist-mono);
+
+  /* ---- Kivu Teal brand scale: bg-kivu-50 … bg-kivu-950 ---- */
+  --color-kivu-50: #effaf9;
+  --color-kivu-100: #d5f2ef;
+  --color-kivu-200: #abe4df;
+  --color-kivu-300: #76cfc8;
+  --color-kivu-400: #40b3ab;
+  --color-kivu-500: #1f978f;
+  --color-kivu-600: #0d7c77; /* main brand */
+  --color-kivu-700: #0b6461;
+  --color-kivu-800: #0c504e;
+  --color-kivu-900: #0b4241;
+  --color-kivu-950: #042726;
+
+  /* ---- shadcn semantic tokens ---- */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* ---- Status tokens (risk / inclusion scores, consent states) ---- */
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-info: var(--info);
+  --color-info-foreground: var(--info-foreground);
+
+  /* ---- Charts ---- */
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  /* ---- Sidebar ---- */
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* ---- Radius ---- */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+:root {
+  --radius: 0.75rem;
+
+  --background: #fbfcfc;
+  --foreground: #0f1a1a;
+
+  --card: #ffffff;
+  --card-foreground: #0f1a1a;
+  --popover: #ffffff;
+  --popover-foreground: #0f1a1a;
+
+  --primary: #0d7c77; /* Kivu Teal — 5:1 on white (WCAG AA) */
+  --primary-foreground: #ffffff;
+
+  --secondary: #effaf9;
+  --secondary-foreground: #0b4241;
+
+  --muted: #f3f5f5;
+  --muted-foreground: #5b6b6a;
+
+  --accent: #d5f2ef;
+  --accent-foreground: #0b4241;
+
+  --destructive: #d14343;
+  --destructive-foreground: #ffffff;
+
+  --success: #1e8e4f;
+  --success-foreground: #ffffff;
+  --warning: #c27c0e;
+  --warning-foreground: #ffffff;
+  --info: #2b6cb0;
+  --info-foreground: #ffffff;
+
+  --border: #e3e8e8;
+  --input: #e3e8e8;
+  --ring: #1f978f;
+
+  --chart-1: #0d7c77;
+  --chart-2: #40b3ab;
+  --chart-3: #2b6cb0;
+  --chart-4: #c27c0e;
+  --chart-5: #8b5cf6;
+
+  --sidebar: #0d7c77;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #ffffff;
+  --sidebar-primary-foreground: #0d7c77;
+  --sidebar-accent: #0b6461;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #0b6461;
+  --sidebar-ring: #76cfc8;
+}
+
+
+/* ---------------- BASE STYLES ---------------- */
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading tracking-tight;
+  }
+  /* Numbers in tables, scores and amounts line up neatly */
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
 }

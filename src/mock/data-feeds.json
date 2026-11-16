@@ -1,0 +1,156 @@
+[
+  {
+    "id": "feed-1",
+    "institutionId": "bank-of-kigali",
+    "institutionName": "Bank of Kigali",
+    "source": "core_banking",
+    "scheduledAt": "16 Nov 2026, 06:00",
+    "completedAt": "16 Nov 2026, 06:04",
+    "records": 18420,
+    "status": "success",
+    "errorMessage": null
+  },
+  {
+    "id": "feed-2",
+    "institutionId": "bank-of-kigali",
+    "institutionName": "Bank of Kigali",
+    "source": "momo",
+    "scheduledAt": "16 Nov 2026, 09:00",
+    "completedAt": "16 Nov 2026, 09:03",
+    "records": 9210,
+    "status": "success",
+    "errorMessage": null
+  },
+  {
+    "id": "feed-3",
+    "institutionId": "equity-bank-rwanda",
+    "institutionName": "Equity Bank Rwanda",
+    "source": "core_banking",
+    "scheduledAt": "16 Nov 2026, 05:00",
+    "completedAt": "16 Nov 2026, 10:12",
+    "records": 14870,
+    "status": "delayed",
+    "errorMessage": null
+  },
+  {
+    "id": "feed-4",
+    "institutionId": "im-bank-rwanda",
+    "institutionName": "I&M Bank Rwanda",
+    "source": "core_banking",
+    "scheduledAt": "16 Nov 2026, 07:00",
+    "completedAt": null,
+    "records": 0,
+    "status": "failed",
+    "errorMessage": "Connection to core banking export timed out after 3 retries."
+  },
+  {
+    "id": "feed-5",
+    "institutionId": "umurenge-sacco-nyarugenge",
+    "institutionName": "Umurenge SACCO Nyarugenge",
+    "source": "sacco_ledger",
+    "scheduledAt": "16 Nov 2026, 06:30",
+    "completedAt": "16 Nov 2026, 06:34",
+    "records": 2140,
+    "status": "success",
+    "errorMessage": null
+  },
+  {
+    "id": "feed-6",
+    "institutionId": "umurenge-sacco-huye",
+    "institutionName": "Umurenge SACCO Huye",
+    "source": "sacco_ledger",
+    "scheduledAt": "15 Nov 2026, 06:30",
+    "completedAt": "15 Nov 2026, 06:37",
+    "records": 1540,
+    "status": "success",
+    "errorMessage": null
+  },
+  {
+    "id": "feed-7",
+    "institutionId": "zigama-css",
+    "institutionName": "Zigama CSS",
+    "source": "sacco_ledger",
+    "scheduledAt": "16 Nov 2026, 06:15",
+    "completedAt": "16 Nov 2026, 06:20",
+    "records": 5230,
+    "status": "success",
+    "errorMessage": null
+  },
+  {
+    "id": "feed-8",
+    "institutionId": "zigama-css",
+    "institutionName": "Zigama CSS",
+    "source": "momo",
+    "scheduledAt": "16 Nov 2026, 10:00",
+    "completedAt": "16 Nov 2026, 10:29",
+    "records": 3380,
+    "status": "delayed",
+    "errorMessage": null
+  },
+  {
+    "id": "feed-9",
+    "institutionId": "inkingi-sacco",
+    "institutionName": "Inkingi SACCO",
+    "source": "sacco_ledger",
+    "scheduledAt": "02 Nov 2026, 06:30",
+    "completedAt": null,
+    "records": 0,
+    "status": "failed",
+    "errorMessage": "API key revoked — institution is suspended."
+  },
+  {
+    "id": "feed-10",
+    "institutionId": "abadacogora-group",
+    "institutionName": "Abadacogora Group",
+    "source": "group_records",
+    "scheduledAt": "14 Nov 2026, 08:00",
+    "completedAt": "14 Nov 2026, 08:02",
+    "records": 86,
+    "status": "success",
+    "errorMessage": null
+  },
+  {
+    "id": "feed-11",
+    "institutionId": "twiyubake-group",
+    "institutionName": "Twiyubake Group",
+    "source": "group_records",
+    "scheduledAt": "12 Nov 2026, 08:00",
+    "completedAt": "12 Nov 2026, 08:01",
+    "records": 64,
+    "status": "success",
+    "errorMessage": null
+  },
+  {
+    "id": "feed-12",
+    "institutionId": "access-to-finance-rwanda",
+    "institutionName": "Access to Finance Rwanda",
+    "source": "momo",
+    "scheduledAt": "16 Nov 2026, 04:00",
+    "completedAt": "16 Nov 2026, 04:21",
+    "records": 24310,
+    "status": "success",
+    "errorMessage": null
+  },
+  {
+    "id": "feed-13",
+    "institutionId": "bank-of-kigali",
+    "institutionName": "Bank of Kigali",
+    "source": "core_banking",
+    "scheduledAt": "15 Nov 2026, 06:00",
+    "completedAt": "15 Nov 2026, 06:05",
+    "records": 18110,
+    "status": "success",
+    "errorMessage": null
+  },
+  {
+    "id": "feed-14",
+    "institutionId": "equity-bank-rwanda",
+    "institutionName": "Equity Bank Rwanda",
+    "source": "momo",
+    "scheduledAt": "15 Nov 2026, 09:00",
+    "completedAt": "15 Nov 2026, 09:04",
+    "records": 7620,
+    "status": "success",
+    "errorMessage": null
+  }
+]

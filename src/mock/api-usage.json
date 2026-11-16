@@ -1,0 +1,628 @@
+{
+  "days": [
+    {
+      "date": "2026-08-19",
+      "requests": 38626,
+      "errors": 275,
+      "p95": 150
+    },
+    {
+      "date": "2026-08-20",
+      "requests": 40638,
+      "errors": 346,
+      "p95": 136
+    },
+    {
+      "date": "2026-08-21",
+      "requests": 40313,
+      "errors": 198,
+      "p95": 98
+    },
+    {
+      "date": "2026-08-22",
+      "requests": 28004,
+      "errors": 160,
+      "p95": 155
+    },
+    {
+      "date": "2026-08-23",
+      "requests": 31565,
+      "errors": 253,
+      "p95": 117
+    },
+    {
+      "date": "2026-08-24",
+      "requests": 40801,
+      "errors": 189,
+      "p95": 149
+    },
+    {
+      "date": "2026-08-25",
+      "requests": 46639,
+      "errors": 422,
+      "p95": 122
+    },
+    {
+      "date": "2026-08-26",
+      "requests": 42215,
+      "errors": 382,
+      "p95": 98
+    },
+    {
+      "date": "2026-08-27",
+      "requests": 46923,
+      "errors": 459,
+      "p95": 143
+    },
+    {
+      "date": "2026-08-28",
+      "requests": 41346,
+      "errors": 249,
+      "p95": 134
+    },
+    {
+      "date": "2026-08-29",
+      "requests": 29439,
+      "errors": 165,
+      "p95": 125
+    },
+    {
+      "date": "2026-08-30",
+      "requests": 33975,
+      "errors": 191,
+      "p95": 126
+    },
+    {
+      "date": "2026-08-31",
+      "requests": 40107,
+      "errors": 299,
+      "p95": 128
+    },
+    {
+      "date": "2026-09-01",
+      "requests": 45473,
+      "errors": 373,
+      "p95": 146
+    },
+    {
+      "date": "2026-09-02",
+      "requests": 46326,
+      "errors": 249,
+      "p95": 145
+    },
+    {
+      "date": "2026-09-03",
+      "requests": 42322,
+      "errors": 402,
+      "p95": 103
+    },
+    {
+      "date": "2026-09-04",
+      "requests": 45107,
+      "errors": 259,
+      "p95": 96
+    },
+    {
+      "date": "2026-09-05",
+      "requests": 29705,
+      "errors": 123,
+      "p95": 104
+    },
+    {
+      "date": "2026-09-06",
+      "requests": 31683,
+      "errors": 173,
+      "p95": 115
+    },
+    {
+      "date": "2026-09-07",
+      "requests": 40464,
+      "errors": 340,
+      "p95": 130
+    },
+    {
+      "date": "2026-09-08",
+      "requests": 41030,
+      "errors": 314,
+      "p95": 132
+    },
+    {
+      "date": "2026-09-09",
+      "requests": 34678,
+      "errors": 195,
+      "p95": 100
+    },
+    {
+      "date": "2026-09-10",
+      "requests": 39930,
+      "errors": 394,
+      "p95": 109
+    },
+    {
+      "date": "2026-09-11",
+      "requests": 38520,
+      "errors": 205,
+      "p95": 120
+    },
+    {
+      "date": "2026-09-12",
+      "requests": 23449,
+      "errors": 97,
+      "p95": 104
+    },
+    {
+      "date": "2026-09-13",
+      "requests": 24557,
+      "errors": 178,
+      "p95": 155
+    },
+    {
+      "date": "2026-09-14",
+      "requests": 34236,
+      "errors": 215,
+      "p95": 116
+    },
+    {
+      "date": "2026-09-15",
+      "requests": 35461,
+      "errors": 230,
+      "p95": 96
+    },
+    {
+      "date": "2026-09-16",
+      "requests": 36301,
+      "errors": 239,
+      "p95": 145
+    },
+    {
+      "date": "2026-09-17",
+      "requests": 32373,
+      "errors": 262,
+      "p95": 127
+    },
+    {
+      "date": "2026-09-18",
+      "requests": 36791,
+      "errors": 286,
+      "p95": 124
+    },
+    {
+      "date": "2026-09-19",
+      "requests": 25067,
+      "errors": 136,
+      "p95": 96
+    },
+    {
+      "date": "2026-09-20",
+      "requests": 25035,
+      "errors": 181,
+      "p95": 112
+    },
+    {
+      "date": "2026-09-21",
+      "requests": 40322,
+      "errors": 361,
+      "p95": 131
+    },
+    {
+      "date": "2026-09-22",
+      "requests": 34573,
+      "errors": 336,
+      "p95": 130
+    },
+    {
+      "date": "2026-09-23",
+      "requests": 39276,
+      "errors": 186,
+      "p95": 101
+    },
+    {
+      "date": "2026-09-24",
+      "requests": 42186,
+      "errors": 338,
+      "p95": 123
+    },
+    {
+      "date": "2026-09-25",
+      "requests": 42910,
+      "errors": 337,
+      "p95": 147
+    },
+    {
+      "date": "2026-09-26",
+      "requests": 29060,
+      "errors": 139,
+      "p95": 122
+    },
+    {
+      "date": "2026-09-27",
+      "requests": 28152,
+      "errors": 265,
+      "p95": 116
+    },
+    {
+      "date": "2026-09-28",
+      "requests": 45669,
+      "errors": 322,
+      "p95": 99
+    },
+    {
+      "date": "2026-09-29",
+      "requests": 41159,
+      "errors": 298,
+      "p95": 122
+    },
+    {
+      "date": "2026-09-30",
+      "requests": 49842,
+      "errors": 208,
+      "p95": 152
+    },
+    {
+      "date": "2026-10-01",
+      "requests": 50559,
+      "errors": 387,
+      "p95": 132
+    },
+    {
+      "date": "2026-10-02",
+      "requests": 47388,
+      "errors": 321,
+      "p95": 126
+    },
+    {
+      "date": "2026-10-03",
+      "requests": 32486,
+      "errors": 173,
+      "p95": 101
+    },
+    {
+      "date": "2026-10-04",
+      "requests": 33421,
+      "errors": 332,
+      "p95": 133
+    },
+    {
+      "date": "2026-10-05",
+      "requests": 45636,
+      "errors": 375,
+      "p95": 112
+    },
+    {
+      "date": "2026-10-06",
+      "requests": 50257,
+      "errors": 468,
+      "p95": 110
+    },
+    {
+      "date": "2026-10-07",
+      "requests": 43924,
+      "errors": 320,
+      "p95": 141
+    },
+    {
+      "date": "2026-10-08",
+      "requests": 49178,
+      "errors": 268,
+      "p95": 141
+    },
+    {
+      "date": "2026-10-09",
+      "requests": 51544,
+      "errors": 259,
+      "p95": 97
+    },
+    {
+      "date": "2026-10-10",
+      "requests": 31969,
+      "errors": 163,
+      "p95": 122
+    },
+    {
+      "date": "2026-10-11",
+      "requests": 31485,
+      "errors": 271,
+      "p95": 111
+    },
+    {
+      "date": "2026-10-12",
+      "requests": 41309,
+      "errors": 215,
+      "p95": 116
+    },
+    {
+      "date": "2026-10-13",
+      "requests": 40428,
+      "errors": 360,
+      "p95": 96
+    },
+    {
+      "date": "2026-10-14",
+      "requests": 46848,
+      "errors": 208,
+      "p95": 137
+    },
+    {
+      "date": "2026-10-15",
+      "requests": 40064,
+      "errors": 347,
+      "p95": 114
+    },
+    {
+      "date": "2026-10-16",
+      "requests": 40773,
+      "errors": 298,
+      "p95": 121
+    },
+    {
+      "date": "2026-10-17",
+      "requests": 30602,
+      "errors": 255,
+      "p95": 135
+    },
+    {
+      "date": "2026-10-18",
+      "requests": 28380,
+      "errors": 167,
+      "p95": 131
+    },
+    {
+      "date": "2026-10-19",
+      "requests": 41737,
+      "errors": 396,
+      "p95": 119
+    },
+    {
+      "date": "2026-10-20",
+      "requests": 35385,
+      "errors": 157,
+      "p95": 148
+    },
+    {
+      "date": "2026-10-21",
+      "requests": 38830,
+      "errors": 289,
+      "p95": 149
+    },
+    {
+      "date": "2026-10-22",
+      "requests": 40546,
+      "errors": 365,
+      "p95": 147
+    },
+    {
+      "date": "2026-10-23",
+      "requests": 34515,
+      "errors": 220,
+      "p95": 119
+    },
+    {
+      "date": "2026-10-24",
+      "requests": 24785,
+      "errors": 169,
+      "p95": 136
+    },
+    {
+      "date": "2026-10-25",
+      "requests": 28070,
+      "errors": 254,
+      "p95": 135
+    },
+    {
+      "date": "2026-10-26",
+      "requests": 39724,
+      "errors": 165,
+      "p95": 144
+    },
+    {
+      "date": "2026-10-27",
+      "requests": 39465,
+      "errors": 231,
+      "p95": 105
+    },
+    {
+      "date": "2026-10-28",
+      "requests": 36971,
+      "errors": 152,
+      "p95": 106
+    },
+    {
+      "date": "2026-10-29",
+      "requests": 42035,
+      "errors": 187,
+      "p95": 105
+    },
+    {
+      "date": "2026-10-30",
+      "requests": 42802,
+      "errors": 205,
+      "p95": 105
+    },
+    {
+      "date": "2026-10-31",
+      "requests": 27391,
+      "errors": 134,
+      "p95": 146
+    },
+    {
+      "date": "2026-11-01",
+      "requests": 32699,
+      "errors": 199,
+      "p95": 118
+    },
+    {
+      "date": "2026-11-02",
+      "requests": 46012,
+      "errors": 289,
+      "p95": 133
+    },
+    {
+      "date": "2026-11-03",
+      "requests": 48396,
+      "errors": 387,
+      "p95": 120
+    },
+    {
+      "date": "2026-11-04",
+      "requests": 41908,
+      "errors": 179,
+      "p95": 97
+    },
+    {
+      "date": "2026-11-05",
+      "requests": 46151,
+      "errors": 329,
+      "p95": 106
+    },
+    {
+      "date": "2026-11-06",
+      "requests": 50887,
+      "errors": 414,
+      "p95": 118
+    },
+    {
+      "date": "2026-11-07",
+      "requests": 32655,
+      "errors": 185,
+      "p95": 120
+    },
+    {
+      "date": "2026-11-08",
+      "requests": 37681,
+      "errors": 188,
+      "p95": 133
+    },
+    {
+      "date": "2026-11-09",
+      "requests": 54303,
+      "errors": 361,
+      "p95": 148
+    },
+    {
+      "date": "2026-11-10",
+      "requests": 47353,
+      "errors": 1988,
+      "p95": 141
+    },
+    {
+      "date": "2026-11-11",
+      "requests": 56373,
+      "errors": 403,
+      "p95": 140
+    },
+    {
+      "date": "2026-11-12",
+      "requests": 49627,
+      "errors": 371,
+      "p95": 137
+    },
+    {
+      "date": "2026-11-13",
+      "requests": 56372,
+      "errors": 2011,
+      "p95": 139
+    },
+    {
+      "date": "2026-11-14",
+      "requests": 37275,
+      "errors": 216,
+      "p95": 116
+    },
+    {
+      "date": "2026-11-15",
+      "requests": 34552,
+      "errors": 267,
+      "p95": 106
+    },
+    {
+      "date": "2026-11-16",
+      "requests": 48209,
+      "errors": 359,
+      "p95": 120
+    }
+  ],
+  "byEndpoint": [
+    {
+      "path": "GET /v1/scores/{memberId}",
+      "requests": 412300
+    },
+    {
+      "path": "POST /v1/uploads",
+      "requests": 198400
+    },
+    {
+      "path": "GET /v1/consent/{id}",
+      "requests": 156900
+    },
+    {
+      "path": "POST /v1/consent/requests",
+      "requests": 98200
+    },
+    {
+      "path": "GET /v1/loan-products",
+      "requests": 74600
+    },
+    {
+      "path": "POST /v1/webhooks",
+      "requests": 31100
+    }
+  ],
+  "byStatusCode": [
+    {
+      "code": "200",
+      "count": 958400
+    },
+    {
+      "code": "201",
+      "count": 42300
+    },
+    {
+      "code": "400",
+      "count": 8900
+    },
+    {
+      "code": "401",
+      "count": 3100
+    },
+    {
+      "code": "404",
+      "count": 2600
+    },
+    {
+      "code": "500",
+      "count": 1700
+    }
+  ],
+  "byInstitution": [
+    {
+      "institutionId": "access-to-finance-rwanda",
+      "institutionName": "Access to Finance Rwanda",
+      "requests": 312400
+    },
+    {
+      "institutionId": "bank-of-kigali",
+      "institutionName": "Bank of Kigali",
+      "requests": 284100
+    },
+    {
+      "institutionId": "equity-bank-rwanda",
+      "institutionName": "Equity Bank Rwanda",
+      "requests": 198700
+    },
+    {
+      "institutionId": "im-bank-rwanda",
+      "institutionName": "I&M Bank Rwanda",
+      "requests": 142300
+    },
+    {
+      "institutionId": "zigama-css",
+      "institutionName": "Zigama CSS",
+      "requests": 68900
+    },
+    {
+      "institutionId": "umurenge-sacco-nyarugenge",
+      "institutionName": "Umurenge SACCO Nyarugenge",
+      "requests": 31200
+    }
+  ]
+}

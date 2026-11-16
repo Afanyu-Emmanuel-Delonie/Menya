@@ -1,0 +1,50 @@
+[
+  {
+    "method": "POST",
+    "path": "/v1/consent/requests",
+    "description": "Create a consent request for a member to share their financial behaviour data.",
+    "auth": "API key",
+    "exampleRequest": "POST /v1/consent/requests\nAuthorization: Bearer mnya_live_••••4f2a\nContent-Type: application/json\n\n{\n  \"memberPhone\": \"+250788000111\",\n  \"purpose\": \"loan_eligibility\",\n  \"durationDays\": 90\n}",
+    "exampleResponse": "201 Created\n\n{\n  \"id\": \"cst_8f2e1a\",\n  \"status\": \"pending\",\n  \"memberPhone\": \"+250788000111\",\n  \"purpose\": \"loan_eligibility\",\n  \"expiresAt\": \"2027-02-14T00:00:00Z\"\n}"
+  },
+  {
+    "method": "GET",
+    "path": "/v1/consent/{id}",
+    "description": "Check the status of a consent request — granted, declined, withdrawn or pending.",
+    "auth": "API key",
+    "exampleRequest": "GET /v1/consent/cst_8f2e1a\nAuthorization: Bearer mnya_live_••••4f2a",
+    "exampleResponse": "200 OK\n\n{\n  \"id\": \"cst_8f2e1a\",\n  \"status\": \"granted\",\n  \"grantedAt\": \"2026-11-10T08:12:00Z\",\n  \"expiresAt\": \"2027-02-14T00:00:00Z\"\n}"
+  },
+  {
+    "method": "POST",
+    "path": "/v1/uploads",
+    "description": "Submit a batch of consented records (core banking, MoMo, SACCO ledger or savings group) for scoring.",
+    "auth": "API key",
+    "exampleRequest": "POST /v1/uploads\nAuthorization: Bearer mnya_live_••••4f2a\nContent-Type: application/json\n\n{\n  \"source\": \"core_banking\",\n  \"recordCount\": 18420,\n  \"fileUrl\": \"https://uploads.menya.africa/batches/b_19a3.csv\"\n}",
+    "exampleResponse": "202 Accepted\n\n{\n  \"uploadId\": \"up_19a3\",\n  \"status\": \"processing\",\n  \"recordCount\": 18420\n}"
+  },
+  {
+    "method": "GET",
+    "path": "/v1/scores/{memberId}",
+    "description": "Fetch a member's current inclusion or repayment score, with its top contributing factors.",
+    "auth": "API key + member consent",
+    "exampleRequest": "GET /v1/scores/mem_7c21\nAuthorization: Bearer mnya_live_••••4f2a",
+    "exampleResponse": "200 OK\n\n{\n  \"memberId\": \"mem_7c21\",\n  \"model\": \"inclusion-score\",\n  \"version\": \"v2.3\",\n  \"score\": 0.81,\n  \"topFactors\": [\n    \"Regular savings group contributions\",\n    \"Consistent MoMo cash-in frequency\"\n  ]\n}"
+  },
+  {
+    "method": "GET",
+    "path": "/v1/loan-products",
+    "description": "List the loan products an institution can match consented members against.",
+    "auth": "API key",
+    "exampleRequest": "GET /v1/loan-products\nAuthorization: Bearer mnya_live_••••4f2a",
+    "exampleResponse": "200 OK\n\n{\n  \"products\": [\n    { \"id\": \"lp_01\", \"name\": \"Inzigo Flex Loan\", \"minScore\": 0.6 },\n    { \"id\": \"lp_02\", \"name\": \"SACCO Growth Loan\", \"minScore\": 0.5 }\n  ]\n}"
+  },
+  {
+    "method": "POST",
+    "path": "/v1/webhooks",
+    "description": "Register an endpoint to receive consent, upload and score events for this institution.",
+    "auth": "API key",
+    "exampleRequest": "POST /v1/webhooks\nAuthorization: Bearer mnya_live_••••4f2a\nContent-Type: application/json\n\n{\n  \"url\": \"https://partner.example.rw/menya/webhook\",\n  \"events\": [\"consent.granted\", \"upload.completed\"]\n}",
+    "exampleResponse": "201 Created\n\n{\n  \"id\": \"wh_4b10\",\n  \"url\": \"https://partner.example.rw/menya/webhook\",\n  \"signingSecret\": \"whsec_••••a91c\"\n}"
+  }
+]

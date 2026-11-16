@@ -1,0 +1,83 @@
+[
+  {
+    "id": "rule-1",
+    "name": "Model accuracy below 0.75",
+    "category": "model",
+    "condition": "Alert me when a live model's accuracy drops below 0.75",
+    "severity": "critical",
+    "enabled": true,
+    "channels": ["in-app", "email"]
+  },
+  {
+    "id": "rule-2",
+    "name": "Score drift detected",
+    "category": "model",
+    "condition": "Alert me when a live model's input features drift more than 15% from training data",
+    "severity": "warning",
+    "enabled": true,
+    "channels": ["in-app"]
+  },
+  {
+    "id": "rule-3",
+    "name": "Data feed delayed",
+    "category": "data_feed",
+    "condition": "Alert me when a scheduled upload is more than 1 hour late",
+    "severity": "warning",
+    "enabled": true,
+    "channels": ["in-app", "email"]
+  },
+  {
+    "id": "rule-4",
+    "name": "Data feed upload failed",
+    "category": "data_feed",
+    "condition": "Alert me when a scheduled upload fails",
+    "severity": "critical",
+    "enabled": true,
+    "channels": ["in-app", "email"]
+  },
+  {
+    "id": "rule-5",
+    "name": "API error rate spike",
+    "category": "api",
+    "condition": "Alert me when API error rate is above 2% for 15 minutes",
+    "severity": "warning",
+    "enabled": true,
+    "channels": ["in-app"]
+  },
+  {
+    "id": "rule-6",
+    "name": "API latency spike",
+    "category": "api",
+    "condition": "Alert me when API p95 latency is above 300 ms for 15 minutes",
+    "severity": "warning",
+    "enabled": false,
+    "channels": ["in-app"]
+  },
+  {
+    "id": "rule-7",
+    "name": "Consent grant rate drop",
+    "category": "consent",
+    "condition": "Alert me when an institution's consent grant rate drops below 70%",
+    "severity": "critical",
+    "enabled": true,
+    "channels": ["in-app", "email"]
+  },
+  {
+    "id": "rule-8",
+    "name": "Fairness approval gap",
+    "category": "fairness",
+    "condition": "Alert me when the approval rate gap between any two groups is above 10 points",
+    "severity": "warning",
+    "enabled": true,
+    "channels": ["in-app"]
+  },
+  {
+    "id": "rule-9",
+    "name": "Repeated failed key attempts",
+    "category": "security",
+    "condition": "Alert me when more than 5 requests use a revoked or unknown API key within 10 minutes",
+    "severity": "warning",
+    "enabled": true,
+    "channels": ["in-app", "email"]
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "key-1",
+    "institutionId": "bank-of-kigali",
+    "institutionName": "Bank of Kigali",
+    "label": "Core banking integration",
+    "prefix": "mnya_live_",
+    "last4": "4f2a",
+    "environment": "live",
+    "createdAt": "10 Feb 2024",
+    "lastUsedAt": "16 Nov 2026, 09:03",
+    "status": "active"
+  },
+  {
+    "id": "key-2",
+    "institutionId": "bank-of-kigali",
+    "institutionName": "Bank of Kigali",
+    "label": "Sandbox testing",
+    "prefix": "mnya_test_",
+    "last4": "9c31",
+    "environment": "sandbox",
+    "createdAt": "10 Feb 2024",
+    "lastUsedAt": "02 Oct 2026, 14:10",
+    "status": "active"
+  },
+  {
+    "id": "key-3",
+    "institutionId": "equity-bank-rwanda",
+    "institutionName": "Equity Bank Rwanda",
+    "label": "Production feed",
+    "prefix": "mnya_live_",
+    "last4": "7be0",
+    "environment": "live",
+    "createdAt": "22 May 2024",
+    "lastUsedAt": "16 Nov 2026, 09:04",
+    "status": "active"
+  },
+  {
+    "id": "key-4",
+    "institutionId": "im-bank-rwanda",
+    "institutionName": "I&M Bank Rwanda",
+    "label": "Core banking integration",
+    "prefix": "mnya_live_",
+    "last4": "1d8e",
+    "environment": "live",
+    "createdAt": "14 Aug 2024",
+    "lastUsedAt": "15 Nov 2026, 07:00",
+    "status": "active"
+  },
+  {
+    "id": "key-5",
+    "institutionId": "umurenge-sacco-nyarugenge",
+    "institutionName": "Umurenge SACCO Nyarugenge",
+    "label": "Ledger sync",
+    "prefix": "mnya_live_",
+    "last4": "a607",
+    "environment": "live",
+    "createdAt": "01 Mar 2024",
+    "lastUsedAt": "16 Nov 2026, 06:34",
+    "status": "active"
+  },
+  {
+    "id": "key-6",
+    "institutionId": "zigama-css",
+    "institutionName": "Zigama CSS",
+    "label": "Ledger sync",
+    "prefix": "mnya_live_",
+    "last4": "33b9",
+    "environment": "live",
+    "createdAt": "05 Nov 2023",
+    "lastUsedAt": "16 Nov 2026, 10:29",
+    "status": "active"
+  },
+  {
+    "id": "key-7",
+    "institutionId": "inkingi-sacco",
+    "institutionName": "Inkingi SACCO",
+    "label": "Ledger sync",
+    "prefix": "mnya_live_",
+    "last4": "e215",
+    "environment": "live",
+    "createdAt": "09 Sep 2024",
+    "lastUsedAt": "02 Nov 2026, 06:30",
+    "status": "revoked"
+  },
+  {
+    "id": "key-8",
+    "institutionId": "abadacogora-group",
+    "institutionName": "Abadacogora Group",
+    "label": "Group records",
+    "prefix": "mnya_live_",
+    "last4": "6f42",
+    "environment": "live",
+    "createdAt": "20 Jan 2025",
+    "lastUsedAt": "14 Nov 2026, 08:02",
+    "status": "active"
+  },
+  {
+    "id": "key-9",
+    "institutionId": "twiyubake-group",
+    "institutionName": "Twiyubake Group",
+    "label": "Group records",
+    "prefix": "mnya_live_",
+    "last4": "c850",
+    "environment": "live",
+    "createdAt": "14 Feb 2025",
+    "lastUsedAt": "12 Nov 2026, 08:01",
+    "status": "active"
+  },
+  {
+    "id": "key-10",
+    "institutionId": "access-to-finance-rwanda",
+    "institutionName": "Access to Finance Rwanda",
+    "label": "Reporting integration",
+    "prefix": "mnya_live_",
+    "last4": "0a9d",
+    "environment": "live",
+    "createdAt": "01 Jun 2023",
+    "lastUsedAt": "16 Nov 2026, 04:21",
+    "status": "active"
+  }
+]
